@@ -1,0 +1,43 @@
+# Integraciones y utilidades
+langchain-google-genai
+langchain-community==0.4.1
+langchain-chroma
+langchain==1.0.1
+langchain-core==1.0.1
+
+# Vector DB / embeddings (Chroma como primera opción)
+chromadb==1.2.2
+
+# Opcional: FAISS solo si sabes que la plataforma lo soporta (puede fallar en Spaces)
+# faiss-cpu
+
+# PDFs / documentos / OCR
+pypdf              # elige pypdf o PyPDF2; pypdf es el sucesor moderno
+pymupdf
+python-docx
+pytesseract
+Pillow
+pypdf  # si quieres PyPDF2 en su lugar: PyPDF2
+
+# Ciencia de datos / utilidades
+numpy               # evita pin fuerte salvo que lo necesites
+pandas
+openpyxl            # requerido por pandas para .xlsx
+
+# Vision / GCP
+google-generativeai
+google-cloud-vision
+
+# Gradio (sin flags). Si necesitas versión concreta usa gradio==X.Y.Z
+gradio>=3.0
+
+# Hugging Face Hub (nota: con guion)
+huggingface-hub[hf_xet]
+huggingface-hub==0.25.2
+
+# Otros (speech)
+SpeechRecognition
+
+# Compatibilidad protobuf: solo si tu stack lo exige; cuidado con pins estrictos
+# protobuf<=3.20.3
+sentence-transformers
